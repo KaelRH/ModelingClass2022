@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: MY_Whiteboxed_Chair.ma
-//Last modified: Wed, Sep 07, 2022 04:43:27 PM
+//Last modified: Wed, Sep 07, 2022 05:01:33 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.2";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22000)";
-fileInfo "UUID" "F713325E-486F-44E8-377A-8CA3B73C7A8B";
+fileInfo "UUID" "AB5CEAA7-4C25-ED8D-18DF-F9B090885143";
 createNode transform -s -n "persp";
 	rename -uid "294DEC8C-4BD8-7F3E-E8F4-9793A157329C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.7682351625423189 7.3581441786649835 -8.4215303386068037 ;
-	setAttr ".r" -type "double3" -23.138352729997536 219.40000000007211 0 ;
+	setAttr ".t" -type "double3" -9.731012043837449 8.3220629165177513 -5.5610916499570049 ;
+	setAttr ".r" -type "double3" -27.93835272999398 236.60000000006613 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A2685E70-449B-BA06-A863-2BBE85D06ECA";
 	setAttr -k off ".v" no;
@@ -1005,19 +1005,19 @@ createNode mesh -n "Beach_ChairShape" -p "Beach_Chair";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B133A092-42E5-69EE-09C2-B8B60A3C9FBB";
+	rename -uid "12F32B36-4B44-B9C5-894D-4E85A84A02A3";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "834CBEEB-4C9D-D311-6B4C-F6B40F48DD59";
+	rename -uid "BAAE0A5F-4691-264E-A5E3-3FA9B95A4C33";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "641DC9AA-4AA2-9564-4A04-7C80B1B150C5";
+	rename -uid "E0486E6E-48A2-C003-3C6F-00AB1500FB9C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E6A73776-46A3-F70F-EF60-BF8148FF1798";
+	rename -uid "ADB067FF-4DD6-3A72-4EDB-28BBF8E216B0";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "715FFD5E-490F-4023-B3BD-53B4166EEACE";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5FD4D7F4-483D-1E92-B590-C1B9F3E24F90";
+	rename -uid "5B099158-4EB8-DBEF-AA3A-48AB8843AC50";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3F995508-4F50-C3DB-6A93-189E04B49587";
 	setAttr ".g" yes;
@@ -1110,8 +1110,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "groupId1.id" "Beach_ChairShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Beach_ChairShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
