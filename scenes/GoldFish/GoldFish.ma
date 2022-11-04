@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: GoldFish.ma
-//Last modified: Fri, Nov 04, 2022 12:54:51 PM
+//Last modified: Fri, Nov 04, 2022 12:58:12 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.2";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "341EEBE5-4E4D-D894-DB5A-5FA1B829D0D6";
+fileInfo "UUID" "85402C5A-4AF9-8542-CCE7-9E8DF88632B3";
 createNode transform -s -n "persp";
 	rename -uid "BB044A83-4349-D0E3-622D-C989510E05C2";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 35.444484164921747 64.999169401709409 15.809415017959163 ;
-	setAttr ".r" -type "double3" 308.99999999155744 -653.59999999995375 0 ;
+	setAttr ".t" -type "double3" 31.346259755724375 68.886618473481377 12.019276549758066 ;
+	setAttr ".r" -type "double3" 304.19999999155561 -651.19999999995173 8.7951841346078836e-15 ;
 	setAttr ".rpt" -type "double3" 2.9424681381537574e-16 1.4527473730880933e-16 -1.1279676917499765e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F02ED4F6-4573-A11F-0CAF-168045B78FA2";
