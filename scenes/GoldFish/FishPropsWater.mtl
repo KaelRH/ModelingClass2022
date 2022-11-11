@@ -1,0 +1,12 @@
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.85
+Ka 0.00 0.00 0.00
+Tf 0.17 0.17 0.17
+Ni 1.00
+newmtl pasted__pasted__lambert2SG
+illum 4
+Kd 0.00 0.00 0.85
+Ka 0.00 0.00 0.00
+Tf 0.17 0.17 0.17
+Ni 1.00
