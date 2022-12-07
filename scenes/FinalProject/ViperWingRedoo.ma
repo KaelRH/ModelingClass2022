@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: ViperWingRedoo.ma
-//Last modified: Tue, Dec 06, 2022 06:03:11 PM
+//Last modified: Tue, Dec 06, 2022 06:03:49 PM
 //Codeset: 1252
 requires maya "2023";
 requires "mtoa" "5.1.2";
@@ -10,19 +10,19 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202205052215-234554116d";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "82221A69-4E1F-08D3-94BC-A2ABDB587C51";
+fileInfo "UUID" "BDDF626C-451E-9D2B-2FF6-F791C8FD8AD4";
 createNode transform -s -n "persp";
 	rename -uid "BD7180F2-4D55-BAE2-1A60-3FB4F67F1C0A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.7904587796218392 12.794904676879888 23.891952303321677 ;
-	setAttr ".r" -type "double3" -20.747365966902485 -1797.3999999999787 5.9696854022371867e-16 ;
+	setAttr ".t" -type "double3" 13.806538991037023 12.728710244590701 19.009124296136889 ;
+	setAttr ".r" -type "double3" -25.547365966902092 -1767.7999999999488 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D314AA2A-44DD-C9E7-FF7E-9CAA2C6ED105";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
-	setAttr ".coi" 24.632570623544286;
+	setAttr ".coi" 20.75196632573136;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
